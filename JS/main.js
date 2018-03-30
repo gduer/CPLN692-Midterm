@@ -109,6 +109,7 @@ function backwards() {
     frame = frame - 1;
     $( "#image" ).empty();
     $( "#content" ).empty();
+    $("#forward-button").prop("disabled",false);
     map.removeLayer(activeLayers);
     activeLayers = L.layerGroup();
     if(frame === 0){
