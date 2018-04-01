@@ -1,6 +1,3 @@
-/* =====================
-Leaflet Configuration
-===================== */
 locations = "https://raw.githubusercontent.com/gduer/CPLN692-Midterm/master/Data/locations.json";
 political = "https://raw.githubusercontent.com/gduer/CPLN692-Midterm/master/Data/political.json";
 
@@ -218,8 +215,6 @@ function onEachFeature(feature, layer) {
       $( "#image" ).empty();
       $("#image").append('<img id="image" src="Images/' + layer.feature.properties.ClaimedBy + '.jpg"/>');
       console.log(layer.feature.properties.name);
-      // You can make your ajax call declaration here
-      //$.ajax(...
     });
 }
 
