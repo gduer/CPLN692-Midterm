@@ -18,7 +18,7 @@ function action(frame) {
     DaniMarker = new L.marker([4.73572308260344, 31.276848003261797], {icon: dannyIcon}).bindPopup('Hi I\'m Dani!').addTo(activeLayers);
     map.addLayer(activeLayers);
     $('#image').css({'border':'solid'});
-    $("#image").append('<img id="image" src="Images/Pentos.png"/>');
+    $("#image").append('<img id="image" src="images/Pentos.png"/>');
     $('#content').css({'font-size':'14px'});
     $('#content').text("Our Queen's story begins in Pentos. A Dothraki khalasar led by Khal Drogo arrives at the city, leading the magisters of Pentos to double the city guard. To save the city, Magister Illyrio Mopatis brokers a marriage between his guest (and our future Queen), Princess Daenerys Targaryen, and Khal Drogo. Daenerys is presented to Drogo at the nine-towered manse Drogo has been given in the city. Their wedding ceremony is held in a field outside the city. Drogo, his new bride, and his khalasar depart the city shortly after the ceremony, heading for Vaes Dothrak.");
     $('.title').text("PENTOS");
@@ -32,7 +32,7 @@ function action(frame) {
     }}).addTo(activeLayers);
     map.addLayer(activeLayers);
     map.flyTo([-1.1344155151522362, 64.92369193967671], 8);
-    $("#image").append('<img id="image" src="Images/VasDoth.png"/>');
+    $("#image").append('<img id="image" src="images/VasDoth.png"/>');
     $('#content').text("After wedding Khal Drogo outside Pentos, Daenerys Targaryen travels with his khalasar to Vaes Dothrak, where she is presented to the dosh khaleen. She survives an assassination attempt in the markets, leading Drogo to announce he will lead his khalasar against the Seven Kingdoms. Soon after, Khal Drogo died from an infection, and Daenerys was cast out from the Dothraki. With her newborn dragons, she decides to keep moving east, looking for shelter.");
     $('.title').text("VAS DOTHRAK");
   }
@@ -45,7 +45,7 @@ function action(frame) {
     }}).addTo(activeLayers);
     map.addLayer(activeLayers);
     map.flyTo([-34.61184354994869, 87.99494206420219], 8);
-    $("#image").append('<img id="image" src="Images/Qarth.png"/>');
+    $("#image").append('<img id="image" src="images/Qarth.png"/>');
     $('#content').text("After escaping Vas Dothrak and nearly dying of thirst in the desert. Our Queen and her young dragons wandered all the way to Qarth, nearly 1,500 miles away from Vaes Dothrak. There, she secured ships and continued on to Slaver's Bay.");
     $('.title').text("QARTH");
   }
@@ -60,7 +60,7 @@ function action(frame) {
     animatedDragon3 = L.animatedMarker(travelPathDragon3.getLatLngs(), {icon: bigDragon}).addTo(activeLayers);
     map.addLayer(activeLayers);
     map.flyTo([-15.238651003055447, 64.66120522857746], 8);
-    $("#image").append('<img id="image" src="Images/Slavers.png"/>');
+    $("#image").append('<img id="image" src="images/Slavers.png"/>');
     $('#content').text("Our Queen's first stop in Slaver's Bay was Astapor, home of the Unsullied army. There, she decided she couldn't stand by and witness its horrible slave conditions. After killing the slave traders and winning the loyalty of the Unsullied, Daenerys headed to the next slaver's town, Yunkai. She conquered Yunkai, freeing more slaves, and then moved onto Meeren.");
     $('.title').text("SLAVER\'S BAY");
   }
@@ -75,7 +75,7 @@ function action(frame) {
     animatedDragon3 = L.animatedMarker(travelPathDragon6.getLatLngs(), {icon: bigDragon}).addTo(activeLayers);
     map.addLayer(activeLayers);
     map.flyTo([-9.706331879419123, 67.14051559054954], 8);
-    $("#image").append('<img id="image" src="Images/Meereen.png"/>');
+    $("#image").append('<img id="image" src="images/Meereen.png"/>');
     $('#content').text("After abolishing slavery in Astapor and Yunkai, our Queen beseiged and conquored the great city of Meereen.  When entering the city, our Queen is received as a hero and savior by Meereenese freedmen. She rules the city as a queen for some time, as she prepares her new ship armada to finally make her landing in Westeros");
     $('.title').text("MEEREEN");
   }
@@ -86,7 +86,7 @@ function action(frame) {
     map.flyTo([ -13.945546670754918, 35.38557338941983], 4);
     map.on('zoomend', function() {
     map.addLayer(activeLayers);});
-    $("#image").append('<img id="image" src="Images/Ships.png"/>');
+    $("#image").append('<img id="image" src="images/Ships.png"/>');
     $('#content').text("Finally, our Queen is on her way to Westeros to make her rightful claim on the Iron Throne!");
     $('.title').text("JOURNEY TO DRAGONSTONE");
     $("#forward-button").prop("disabled",true);
